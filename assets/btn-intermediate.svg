@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 52" width="220" height="52">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#9a6700"/><stop offset="100%" style="stop-color:#d29922"/></linearGradient></defs>
+  <rect width="220" height="52" rx="10" fill="url(#g)"/>
+  <text x="110" y="22" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="16" fill="white">🟡 Intermediate Labs</text>
+  <text x="110" y="40" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="#fff3cd">Labs 07–10 · Compose → Debugging</text>
+</svg>

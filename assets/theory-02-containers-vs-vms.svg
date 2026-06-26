@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 340" width="860" height="340">
+  <rect width="860" height="340" fill="#0d1117" rx="12"/>
+  <text x="430" y="36" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="20" font-weight="700" fill="#e6edf3">⚖️  Theory 02 — Containers vs Virtual Machines</text>
+  <line x1="40" y1="50" x2="820" y2="50" stroke="#30363d" stroke-width="1"/>
+  <!-- VM column -->
+  <text x="215" y="78" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="15" font-weight="700" fill="#f85149">Virtual Machine (VM)</text>
+  <!-- VM stack -->
+  <rect x="80" y="90" width="270" height="34" rx="6" fill="#21262d" stroke="#30363d" stroke-width="1"/>
+  <text x="215" y="112" text-anchor="middle" font-family="monospace" font-size="12" fill="#e6edf3">App A</text>
+  <rect x="80" y="130" width="270" height="34" rx="6" fill="#21262d" stroke="#30363d" stroke-width="1"/>
+  <text x="215" y="152" text-anchor="middle" font-family="monospace" font-size="12" fill="#e6edf3">Guest OS (Ubuntu)</text>
+  <rect x="80" y="170" width="270" height="34" rx="6" fill="#da3633" fill-opacity="0.3" stroke="#f85149" stroke-width="1"/>
+  <text x="215" y="192" text-anchor="middle" font-family="monospace" font-size="12" fill="#f85149">Hypervisor (VMware/VBox)</text>
+  <rect x="80" y="210" width="270" height="34" rx="6" fill="#21262d" stroke="#30363d" stroke-width="1"/>
+  <text x="215" y="232" text-anchor="middle" font-family="monospace" font-size="12" fill="#8b949e">Host OS</text>
+  <rect x="80" y="250" width="270" height="34" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="215" y="272" text-anchor="middle" font-family="monospace" font-size="12" fill="#6e7681">Hardware</text>
+  <text x="215" y="305" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="#f85149">⚠️  GBs · Minutes to start · Full OS</text>
+  <!-- Container column -->
+  <text x="645" y="78" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="15" font-weight="700" fill="#22d3ee">Container</text>
+  <rect x="510" y="90" width="120" height="34" rx="6" fill="#21262d" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="570" y="112" text-anchor="middle" font-family="monospace" font-size="12" fill="#e6edf3">App A</text>
+  <rect x="640" y="90" width="120" height="34" rx="6" fill="#21262d" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="700" y="112" text-anchor="middle" font-family="monospace" font-size="12" fill="#e6edf3">App B</text>
+  <rect x="510" y="130" width="250" height="34" rx="6" fill="#0ea5e9" fill-opacity="0.25" stroke="#0ea5e9" stroke-width="1.5"/>
+  <text x="635" y="152" text-anchor="middle" font-family="monospace" font-size="12" fill="#22d3ee">Docker Engine</text>
+  <rect x="510" y="170" width="250" height="34" rx="6" fill="#21262d" stroke="#30363d" stroke-width="1"/>
+  <text x="635" y="192" text-anchor="middle" font-family="monospace" font-size="12" fill="#8b949e">Host OS (shared kernel)</text>
+  <rect x="510" y="210" width="250" height="34" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="635" y="232" text-anchor="middle" font-family="monospace" font-size="12" fill="#6e7681">Hardware</text>
+  <text x="635" y="305" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="#3fb950">✅  MBs · Seconds to start · Shared OS</text>
+  <!-- VS divider -->
+  <text x="430" y="185" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="26" font-weight="900" fill="#d29922">VS</text>
+  <line x1="430" y1="85" x2="430" y2="285" stroke="#30363d" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="430" y="325" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="#6e7681">Containers share the host OS kernel — no Guest OS needed, making them far lighter and faster</text>
+</svg>

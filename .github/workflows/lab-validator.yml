@@ -1,0 +1,56 @@
+name: Docker Lab Validator
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate lab files exist
+        run: |
+          missing=0
+          labs=(
+            "beginner/lab-01-installation.md"
+            "beginner/lab-02-first-container.md"
+            "beginner/lab-03-dockerfile.md"
+            "beginner/lab-04-images.md"
+            "beginner/lab-05-volumes.md"
+            "beginner/lab-06-networking.md"
+            "intermediate/lab-07-docker-compose.md"
+            "intermediate/lab-08-multi-container.md"
+            "intermediate/lab-09-environment.md"
+            "intermediate/lab-10-debugging.md"
+            "pro/lab-11-multistage-builds.md"
+            "pro/lab-12-docker-hub.md"
+            "pro/lab-13-cicd-docker.md"
+            "pro/lab-14-security.md"
+            "tasks/beginner-tasks.md"
+            "tasks/intermediate-tasks.md"
+            "tasks/pro-tasks.md"
+          )
+          for lab in "${labs[@]}"; do
+            if [ ! -f "$lab" ]; then
+              echo "❌ Missing: $lab"
+              missing=$((missing + 1))
+            else
+              echo "✅ Found: $lab"
+            fi
+          done
+          exit $missing
+
+      - name: Generate summary
+        run: |
+          echo "## 🐳 Docker Lab Validation" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Track | Labs | Status |" >> $GITHUB_STEP_SUMMARY
+          echo "|-------|------|--------|" >> $GITHUB_STEP_SUMMARY
+          echo "| 🟢 Beginner | 6 labs | ✅ |" >> $GITHUB_STEP_SUMMARY
+          echo "| 🟡 Intermediate | 4 labs | ✅ |" >> $GITHUB_STEP_SUMMARY
+          echo "| 🔴 Pro | 4 labs | ✅ |" >> $GITHUB_STEP_SUMMARY
+          echo "| 📋 Tasks | 3 files | ✅ |" >> $GITHUB_STEP_SUMMARY

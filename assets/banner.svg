@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <linearGradient id="bl" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+    <linearGradient id="wh" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22d3ee"/>
+      <stop offset="100%" style="stop-color:#0ea5e9"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="900" height="260" fill="url(#bg)"/>
+  <!-- Grid lines -->
+  <g opacity="0.05">
+    <line x1="0" y1="65" x2="900" y2="65" stroke="#58a6ff" stroke-width="1"/>
+    <line x1="0" y1="130" x2="900" y2="130" stroke="#58a6ff" stroke-width="1"/>
+    <line x1="0" y1="195" x2="900" y2="195" stroke="#58a6ff" stroke-width="1"/>
+    <line x1="225" y1="0" x2="225" y2="260" stroke="#58a6ff" stroke-width="1"/>
+    <line x1="450" y1="0" x2="450" y2="260" stroke="#58a6ff" stroke-width="1"/>
+    <line x1="675" y1="0" x2="675" y2="260" stroke="#58a6ff" stroke-width="1"/>
+  </g>
+  <!-- Whale body -->
+  <ellipse cx="80" cy="150" rx="58" ry="38" fill="#0ea5e9" opacity="0.9"/>
+  <!-- Whale tail -->
+  <path d="M 22 148 Q 5 130 8 150 Q 5 170 22 155 Z" fill="#0ea5e9" opacity="0.9"/>
+  <!-- Water splashes -->
+  <path d="M 38 175 Q 50 165 62 175 Q 74 165 86 175 Q 98 165 110 175" stroke="#22d3ee" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 44 183 Q 56 173 68 183 Q 80 173 92 183 Q 104 173 116 183" stroke="#22d3ee" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <!-- Whale eye -->
+  <circle cx="105" cy="140" r="5" fill="#0d1117"/>
+  <circle cx="106" cy="139" r="2" fill="white"/>
+  <!-- Container boxes -->
+  <rect x="42" y="115" width="20" height="20" rx="3" fill="#22d3ee" opacity="0.8"/>
+  <rect x="65" y="115" width="20" height="20" rx="3" fill="#2563eb" opacity="0.8"/>
+  <rect x="42" y="137" width="20" height="15" rx="3" fill="#2563eb" opacity="0.8"/>
+  <rect x="65" y="137" width="20" height="15" rx="3" fill="#22d3ee" opacity="0.8"/>
+  <!-- Center: Title -->
+  <text x="450" y="68" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="36" font-weight="900" fill="#e6edf3" filter="url(#glow)">🐳 Docker Lab Session</text>
+  <text x="450" y="98" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="15" fill="#8b949e">14 Hands-on Labs  ·  3 Skill Levels  ·  5+ Sample Apps  ·  Real-world CI/CD</text>
+  <!-- Pills -->
+  <rect x="258" y="118" width="110" height="28" rx="14" fill="#238636" fill-opacity="0.3" stroke="#2ea043" stroke-width="1.5"/>
+  <text x="313" y="136" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#3fb950">🟢 Beginner</text>
+  <rect x="390" y="118" width="120" height="28" rx="14" fill="#9a6700" fill-opacity="0.3" stroke="#d29922" stroke-width="1.5"/>
+  <text x="450" y="136" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#d29922">🟡 Intermediate</text>
+  <rect x="532" y="118" width="110" height="28" rx="14" fill="#da3633" fill-opacity="0.3" stroke="#f85149" stroke-width="1.5"/>
+  <text x="587" y="136" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#f85149">🔴 Pro</text>
+  <!-- Stats bar -->
+  <rect x="230" y="168" width="440" height="52" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="310" y="190" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="22" fill="#22d3ee">🐳</text>
+  <text x="310" y="208" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#8b949e">Containers</text>
+  <line x1="380" y1="174" x2="380" y2="214" stroke="#30363d" stroke-width="1"/>
+  <text x="420" y="190" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="22" fill="#2563eb">📦</text>
+  <text x="420" y="208" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#8b949e">Images</text>
+  <line x1="460" y1="174" x2="460" y2="214" stroke="#30363d" stroke-width="1"/>
+  <text x="500" y="190" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="22" fill="#0ea5e9">🔧</text>
+  <text x="500" y="208" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#8b949e">Compose</text>
+  <line x1="540" y1="174" x2="540" y2="214" stroke="#30363d" stroke-width="1"/>
+  <text x="580" y="190" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="22" fill="#22d3ee">🚀</text>
+  <text x="580" y="208" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#8b949e">CI/CD</text>
+  <line x1="620" y1="174" x2="620" y2="214" stroke="#30363d" stroke-width="1"/>
+  <text x="660" y="190" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="22" fill="#2563eb">🔒</text>
+  <text x="660" y="208" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#8b949e">Security</text>
+  <!-- Right: Terminal -->
+  <rect x="730" y="80" width="155" height="120" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <rect x="730" y="80" width="155" height="24" rx="8" fill="#21262d"/>
+  <circle cx="748" cy="92" r="5" fill="#ff5f57"/><circle cx="763" cy="92" r="5" fill="#febc2e"/><circle cx="778" cy="92" r="5" fill="#28c840"/>
+  <text x="807" y="95" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">terminal</text>
+  <text x="742" y="120" font-family="monospace" font-size="10" fill="#22d3ee">$ docker run hello</text>
+  <text x="742" y="134" font-family="monospace" font-size="10" fill="#3fb950">Hello from Docker!</text>
+  <text x="742" y="148" font-family="monospace" font-size="10" fill="#22d3ee">$ docker ps</text>
+  <text x="742" y="162" font-family="monospace" font-size="10" fill="#8b949e">CONTAINER ID...</text>
+  <text x="742" y="176" font-family="monospace" font-size="10" fill="#22d3ee">$ docker build .</text>
+  <text x="742" y="190" font-family="monospace" font-size="10" fill="#3fb950">Successfully built</text>
+  <text x="742" y="195" font-family="monospace" font-size="10.5" fill="#58a6ff">▌</text>
+</svg>
