@@ -1,5 +1,32 @@
 # 🟢 Beginner Docker Tasks
 
+
+---
+
+<div align="center">
+
+[![← Beginner Labs](https://img.shields.io/badge/←_Beginner_Labs-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](../beginner/README.md)
+[![All Tasks](https://img.shields.io/badge/All_Tasks-2496ED?style=for-the-badge&logo=docker&logoColor=white)](../README.md#-all-labs)
+[![Intermediate Tasks →](https://img.shields.io/badge/Intermediate_Tasks_→-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](intermediate-tasks.md)
+
+</div>
+
+---
+
+<div align="center">
+
+**Jump to section:**
+
+[![Task_1_Run_and_Explore](https://img.shields.io/badge/Task_1_Run_and_Explore-2496ED?style=flat-square&logo=docker&logoColor=white)](#task-1-run-and-explore)
+[![Task_2_Build_Your_First_Imag](https://img.shields.io/badge/Task_2_Build_Your_First_Imag-2496ED?style=flat-square&logo=docker&logoColor=white)](#task-2-build-your-first-image)
+[![Task_3_Web_Server](https://img.shields.io/badge/Task_3_Web_Server-2496ED?style=flat-square&logo=docker&logoColor=white)](#task-3-web-server)
+[![Task_4_Persistent_Data](https://img.shields.io/badge/Task_4_Persistent_Data-2496ED?style=flat-square&logo=docker&logoColor=white)](#task-4-persistent-data)
+[![Task_5_Cleanup_Challenge](https://img.shields.io/badge/Task_5_Cleanup_Challenge-2496ED?style=flat-square&logo=docker&logoColor=white)](#task-5-cleanup-challenge)
+
+</div>
+
+---
+
 > Complete all 5 tasks to progress to Intermediate level.
 
 ---
@@ -63,3 +90,12 @@ Without using `docker system prune`, manually:
 4. Show final `docker ps -a`, `docker images`, `docker volume ls` — all clean
 
 **Deliverable:** Clean output of all three commands.
+---
+
+<div align="center">
+
+[![← Beginner Labs](https://img.shields.io/badge/←_Beginner_Labs-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](../beginner/README.md)
+[![All Tasks](https://img.shields.io/badge/All_Tasks-2496ED?style=for-the-badge&logo=docker&logoColor=white)](../README.md#-all-labs)
+[![Intermediate Tasks →](https://img.shields.io/badge/Intermediate_Tasks_→-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](intermediate-tasks.md)
+
+</div>

@@ -1,5 +1,32 @@
 # 🟡 Intermediate Docker Tasks
 
+
+---
+
+<div align="center">
+
+[![← Beginner Tasks](https://img.shields.io/badge/←_Beginner_Tasks-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](beginner-tasks.md)
+[![All Tasks](https://img.shields.io/badge/All_Tasks-2496ED?style=for-the-badge&logo=docker&logoColor=white)](../README.md#-all-labs)
+[![Pro Tasks →](https://img.shields.io/badge/Pro_Tasks_→-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](pro-tasks.md)
+
+</div>
+
+---
+
+<div align="center">
+
+**Jump to section:**
+
+[![Task_1_Flask__Redis_with_Com](https://img.shields.io/badge/Task_1_Flask__Redis_with_Com-2496ED?style=flat-square&logo=docker&logoColor=white)](#task-1-flask-redis-with-compose)
+[![Task_2_Environment_Isolation](https://img.shields.io/badge/Task_2_Environment_Isolation-2496ED?style=flat-square&logo=docker&logoColor=white)](#task-2-environment-isolation)
+[![Task_3_Multi-Container_Depen](https://img.shields.io/badge/Task_3_Multi-Container_Depen-2496ED?style=flat-square&logo=docker&logoColor=white)](#task-3-multi-container-dependency-chain)
+[![Task_4_Debug_a_Broken_Stack](https://img.shields.io/badge/Task_4_Debug_a_Broken_Stack-2496ED?style=flat-square&logo=docker&logoColor=white)](#task-4-debug-a-broken-stack)
+[![Task_5_Volume_Backup_%26_Res](https://img.shields.io/badge/Task_5_Volume_Backup_%26_Res-2496ED?style=flat-square&logo=docker&logoColor=white)](#task-5-volume-backup-restore)
+
+</div>
+
+---
+
 > Complete all 5 tasks to progress to Pro level.
 
 ---
@@ -67,3 +94,12 @@ Find and fix all bugs. Document each fix with explanation.
 5. Verify data is intact
 
 **Deliverable:** Backup and restore commands used + final SELECT output.
+---
+
+<div align="center">
+
+[![← Beginner Tasks](https://img.shields.io/badge/←_Beginner_Tasks-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](beginner-tasks.md)
+[![All Tasks](https://img.shields.io/badge/All_Tasks-2496ED?style=for-the-badge&logo=docker&logoColor=white)](../README.md#-all-labs)
+[![Pro Tasks →](https://img.shields.io/badge/Pro_Tasks_→-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](pro-tasks.md)
+
+</div>
