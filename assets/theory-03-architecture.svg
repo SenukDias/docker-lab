@@ -1,50 +1,83 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 320" width="860" height="320">
-  <rect width="860" height="320" fill="#0d1117" rx="12"/>
-  <text x="430" y="36" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="20" font-weight="700" fill="#e6edf3">🏛️  Theory 03 — Docker Architecture</text>
-  <line x1="40" y1="50" x2="820" y2="50" stroke="#30363d" stroke-width="1"/>
-  <!-- CLI box -->
-  <rect x="40" y="70" width="150" height="80" rx="8" fill="#161b22" stroke="#22d3ee" stroke-width="1.5"/>
-  <text x="115" y="100" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#22d3ee">Docker CLI</text>
-  <text x="115" y="118" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">docker run</text>
-  <text x="115" y="132" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">docker build</text>
-  <!-- Arrow CLI → Daemon -->
-  <line x1="192" y1="110" x2="255" y2="110" stroke="#22d3ee" stroke-width="2" marker-end="url(#arr)"/>
-  <text x="224" y="105" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="10" fill="#6e7681">REST API</text>
-  <!-- Daemon box -->
-  <rect x="257" y="62" width="200" height="200" rx="8" fill="#161b22" stroke="#0ea5e9" stroke-width="2"/>
-  <rect x="257" y="62" width="200" height="30" rx="8" fill="#0ea5e9" fill-opacity="0.25"/>
-  <text x="357" y="82" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="700" fill="#0ea5e9">Docker Daemon (dockerd)</text>
-  <!-- Inside daemon -->
-  <rect x="272" y="102" width="170" height="30" rx="5" fill="#21262d" stroke="#30363d"/>
-  <text x="357" y="121" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="#e6edf3">📦 Container Runtime</text>
-  <rect x="272" y="140" width="170" height="30" rx="5" fill="#21262d" stroke="#30363d"/>
-  <text x="357" y="159" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="#e6edf3">🏗️ Image Builder</text>
-  <rect x="272" y="178" width="170" height="30" rx="5" fill="#21262d" stroke="#30363d"/>
-  <text x="357" y="197" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="#e6edf3">🌐 Network Manager</text>
-  <rect x="272" y="216" width="170" height="30" rx="5" fill="#21262d" stroke="#30363d"/>
-  <text x="357" y="235" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="#e6edf3">💾 Volume Manager</text>
-  <!-- Arrow Daemon → Registry -->
-  <line x1="459" y1="162" x2="530" y2="162" stroke="#2563eb" stroke-width="2"/>
-  <polygon points="530,157 540,162 530,167" fill="#2563eb"/>
-  <text x="495" y="157" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="10" fill="#6e7681">pull/push</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 360" width="860" height="360">
+  <defs>
+    <symbol id="docker-logo" viewBox="0 0 24 24"><path fill="#2496ED" d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.186.186 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.082.185.184.185m24.758 1.886c-.722-1.189-2.641-1.624-4.508-1.46-.316-2.336-1.943-4.37-4.678-6.16l-.949-.569-.633.912c-.8 1.217-1.204 2.907-1.14 4.53.068 1.564.606 3.128 1.53 4.33-.713.385-2.12.958-3.975.926H.485a.486.486 0 00-.486.484c-.023 1.782.28 3.535.876 5.098C1.535 21.537 2.6 23.022 4.21 24c1.79 1.089 4.712 1.707 8.076 1.707 7.59 0 13.18-3.471 15.823-9.767 1.035.019 3.266.016 4.41-2.153a.488.488 0 00.007-.49l-.586-.323z"/></symbol>
+  </defs>
+  <rect width="860" height="360" fill="#0d1117" rx="12"/>
+  <!-- Header -->
+  <rect x="0" y="0" width="860" height="48" rx="12" fill="#161b22"/>
+  <rect x="0" y="36" width="860" height="12" fill="#161b22"/>
+  <use href="#docker-logo" x="14" y="10" width="28" height="28"/>
+  <text x="52" y="31" font-family="'Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#e6edf3">Theory 03 — Docker Architecture</text>
+  <line x1="0" y1="48" x2="860" y2="48" stroke="#1d3354" stroke-width="1"/>
+
+  <!-- Client box -->
+  <rect x="30" y="64" width="180" height="270" rx="8" fill="#161b22" stroke="#2496ED" stroke-width="1.5"/>
+  <rect x="30" y="64" width="180" height="36" rx="8" fill="#2496ED" fill-opacity="0.2"/>
+  <use href="#docker-logo" x="38" y="70" width="20" height="20"/>
+  <text x="120" y="88" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="700" fill="#2496ED">Docker Client</text>
+  <text x="120" y="116" text-anchor="middle" font-family="monospace" font-size="11" fill="#e6edf3">docker build</text>
+  <text x="120" y="136" text-anchor="middle" font-family="monospace" font-size="11" fill="#e6edf3">docker pull</text>
+  <text x="120" y="156" text-anchor="middle" font-family="monospace" font-size="11" fill="#e6edf3">docker run</text>
+  <text x="120" y="176" text-anchor="middle" font-family="monospace" font-size="11" fill="#e6edf3">docker push</text>
+  <text x="120" y="196" text-anchor="middle" font-family="monospace" font-size="11" fill="#e6edf3">docker stop</text>
+  <text x="120" y="216" text-anchor="middle" font-family="monospace" font-size="11" fill="#e6edf3">docker ps</text>
+  <text x="120" y="260" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="10" fill="#6e7681">CLI / REST API</text>
+  <text x="120" y="276" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="10" fill="#6e7681">Unix socket or TCP</text>
+
+  <!-- Arrow Client→Daemon -->
+  <line x1="210" y1="200" x2="260" y2="200" stroke="#2496ED" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+  <text x="235" y="192" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="9" fill="#8b949e">REST API</text>
+
+  <!-- Docker Daemon box -->
+  <rect x="262" y="64" width="330" height="270" rx="8" fill="#161b22" stroke="#1d3354" stroke-width="1.5"/>
+  <rect x="262" y="64" width="330" height="36" rx="8" fill="#1d3354" fill-opacity="0.6"/>
+  <use href="#docker-logo" x="272" y="70" width="20" height="20"/>
+  <text x="430" y="88" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="700" fill="#58a6ff">Docker Daemon (dockerd)</text>
+  <!-- Images in daemon -->
+  <rect x="278" y="112" width="145" height="100" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <text x="350" y="130" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" font-weight="600" fill="#8b949e">Images</text>
+  <text x="350" y="148" text-anchor="middle" font-family="monospace" font-size="10" fill="#6e7681">nginx:latest</text>
+  <text x="350" y="164" text-anchor="middle" font-family="monospace" font-size="10" fill="#6e7681">python:3.11</text>
+  <text x="350" y="180" text-anchor="middle" font-family="monospace" font-size="10" fill="#6e7681">node:18-alpine</text>
+  <text x="350" y="196" text-anchor="middle" font-family="monospace" font-size="10" fill="#6e7681">ubuntu:22.04</text>
+  <!-- Containers in daemon -->
+  <rect x="436" y="112" width="145" height="100" rx="6" fill="#0d1117" stroke="#2496ED" stroke-width="1"/>
+  <text x="508" y="130" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" font-weight="600" fill="#2496ED">Containers</text>
+  <text x="508" y="148" text-anchor="middle" font-family="monospace" font-size="10" fill="#3fb950">● web (running)</text>
+  <text x="508" y="164" text-anchor="middle" font-family="monospace" font-size="10" fill="#6e7681">○ db (stopped)</text>
+  <text x="508" y="180" text-anchor="middle" font-family="monospace" font-size="10" fill="#3fb950">● cache (running)</text>
+  <!-- Volumes / Networks -->
+  <rect x="278" y="225" width="295" height="50" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <text x="310" y="254" font-family="'Segoe UI',sans-serif" font-size="11" fill="#8b949e">📦 Volumes   🌐 Networks   🔧 Plugins</text>
+
+  <!-- Arrow Daemon→Registry -->
+  <line x1="592" y1="200" x2="640" y2="200" stroke="#d29922" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arr2)"/>
+  <text x="615" y="192" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="9" fill="#8b949e">push / pull</text>
+
   <!-- Registry box -->
-  <rect x="542" y="70" width="170" height="180" rx="8" fill="#161b22" stroke="#2563eb" stroke-width="1.5"/>
-  <rect x="542" y="70" width="170" height="30" rx="8" fill="#2563eb" fill-opacity="0.25"/>
-  <text x="627" y="90" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="700" fill="#58a6ff">Registry</text>
-  <text x="627" y="118" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="#8b949e">Docker Hub</text>
-  <rect x="560" y="128" width="134" height="22" rx="4" fill="#21262d"/>
-  <text x="627" y="143" text-anchor="middle" font-family="monospace" font-size="10" fill="#3fb950">ubuntu:22.04</text>
-  <rect x="560" y="156" width="134" height="22" rx="4" fill="#21262d"/>
-  <text x="627" y="171" text-anchor="middle" font-family="monospace" font-size="10" fill="#3fb950">node:20-alpine</text>
-  <rect x="560" y="184" width="134" height="22" rx="4" fill="#21262d"/>
-  <text x="627" y="199" text-anchor="middle" font-family="monospace" font-size="10" fill="#3fb950">nginx:latest</text>
-  <text x="627" y="232" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="#8b949e">GHCR / ECR / ACR</text>
-  <!-- Running container -->
-  <rect x="730" y="90" width="110" height="60" rx="8" fill="#238636" fill-opacity="0.3" stroke="#2ea043" stroke-width="1.5"/>
-  <text x="785" y="112" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" font-weight="700" fill="#3fb950">Container</text>
-  <text x="785" y="128" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">Running</text>
-  <text x="785" y="142" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">Instance</text>
-  <line x1="459" y1="100" x2="728" y2="100" stroke="#30363d" stroke-width="1" stroke-dasharray="4,3"/>
-  <polygon points="728,96 738,100 728,104" fill="#30363d"/>
-  <text x="430" y="300" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="#6e7681">The CLI sends commands → Daemon executes them → pulls images from Registry → runs Containers</text>
+  <rect x="642" y="64" width="188" height="270" rx="8" fill="#161b22" stroke="#d29922" stroke-width="1.5"/>
+  <rect x="642" y="64" width="188" height="36" rx="8" fill="#d29922" fill-opacity="0.18"/>
+  <text x="736" y="88" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="700" fill="#d29922">Registry</text>
+  <text x="736" y="116" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="#e6edf3">Docker Hub</text>
+  <text x="736" y="136" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="#6e7681">hub.docker.com</text>
+  <line x1="660" y1="150" x2="812" y2="150" stroke="#30363d" stroke-width="1"/>
+  <text x="736" y="172" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="#e6edf3">GHCR</text>
+  <text x="736" y="190" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="#6e7681">ghcr.io</text>
+  <line x1="660" y1="202" x2="812" y2="202" stroke="#30363d" stroke-width="1"/>
+  <text x="736" y="222" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="#e6edf3">AWS ECR / GCR</text>
+  <text x="736" y="240" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="#6e7681">Private registries</text>
+  <text x="736" y="270" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="10" fill="#6e7681">Stores + distributes</text>
+  <text x="736" y="286" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="10" fill="#6e7681">container images</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#2496ED"/>
+    </marker>
+    <marker id="arr2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#d29922"/>
+    </marker>
+  </defs>
+
+  <text x="430" y="348" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="#6e7681">Client sends commands via REST API → Daemon manages images, containers, volumes → Registry stores/distributes images</text>
 </svg>

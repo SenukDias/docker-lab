@@ -1,48 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 300" width="860" height="300">
-  <rect width="860" height="300" fill="#0d1117" rx="12"/>
-  <text x="430" y="36" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="20" font-weight="700" fill="#e6edf3">🔧  Theory 04 — Docker Compose</text>
-  <line x1="40" y1="50" x2="820" y2="50" stroke="#30363d" stroke-width="1"/>
-  <!-- docker-compose.yml box -->
-  <rect x="40" y="65" width="230" height="180" rx="8" fill="#161b22" stroke="#d29922" stroke-width="1.5"/>
-  <rect x="40" y="65" width="230" height="28" rx="8" fill="#9a6700" fill-opacity="0.4"/>
-  <text x="155" y="84" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="700" fill="#d29922">docker-compose.yml</text>
-  <text x="55" y="110" font-family="monospace" font-size="10" fill="#3fb950">version: '3.8'</text>
-  <text x="55" y="124" font-family="monospace" font-size="10" fill="#58a6ff">services:</text>
-  <text x="65" y="138" font-family="monospace" font-size="10" fill="#79c0ff">  web:</text>
-  <text x="75" y="152" font-family="monospace" font-size="10" fill="#e6edf3">    image: nginx</text>
-  <text x="75" y="166" font-family="monospace" font-size="10" fill="#e6edf3">    ports: ["80:80"]</text>
-  <text x="65" y="180" font-family="monospace" font-size="10" fill="#79c0ff">  app:</text>
-  <text x="75" y="194" font-family="monospace" font-size="10" fill="#e6edf3">    build: .</text>
-  <text x="65" y="208" font-family="monospace" font-size="10" fill="#79c0ff">  db:</text>
-  <text x="75" y="222" font-family="monospace" font-size="10" fill="#e6edf3">    image: postgres</text>
-  <!-- Arrow -->
-  <text x="300" y="160" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="26" fill="#0ea5e9">→</text>
-  <!-- 3 containers -->
-  <rect x="340" y="65" width="130" height="60" rx="8" fill="#161b22" stroke="#22d3ee" stroke-width="1.5"/>
-  <text x="405" y="88" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="700" fill="#22d3ee">🌐 nginx</text>
-  <text x="405" y="106" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">Port 80:80</text>
-  <text x="405" y="118" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">Reverse proxy</text>
-  <rect x="340" y="140" width="130" height="60" rx="8" fill="#161b22" stroke="#0ea5e9" stroke-width="1.5"/>
-  <text x="405" y="163" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="700" fill="#0ea5e9">⚙️ app</text>
-  <text x="405" y="181" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">Build: ./</text>
-  <text x="405" y="193" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">Flask/Node API</text>
-  <rect x="340" y="215" width="130" height="60" rx="8" fill="#161b22" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="405" y="238" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="700" fill="#58a6ff">🗄️ postgres</text>
-  <text x="405" y="256" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">Port 5432</text>
-  <text x="405" y="268" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">Volume: db-data</text>
-  <!-- Shared network -->
-  <rect x="482" y="90" width="20" height="175" fill="#30363d" opacity="0.5"/>
-  <text x="492" y="230" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="10" fill="#6e7681" transform="rotate(-90,492,180)">shared network</text>
-  <!-- Benefits -->
-  <rect x="530" y="65" width="290" height="195" rx="8" fill="#161b22" stroke="#30363d"/>
-  <rect x="530" y="65" width="290" height="28" rx="8" fill="#21262d"/>
-  <text x="675" y="84" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="700" fill="#e6edf3">Why Compose?</text>
-  <text x="548" y="112" font-family="'Segoe UI',sans-serif" font-size="12" fill="#3fb950">✅  One command to rule them all</text>
-  <text x="560" y="128" font-family="monospace" font-size="11" fill="#22d3ee">docker compose up -d</text>
-  <text x="548" y="150" font-family="'Segoe UI',sans-serif" font-size="12" fill="#3fb950">✅  Declarative config — version control</text>
-  <text x="548" y="170" font-family="'Segoe UI',sans-serif" font-size="12" fill="#3fb950">✅  Auto-creates shared network</text>
-  <text x="548" y="190" font-family="'Segoe UI',sans-serif" font-size="12" fill="#3fb950">✅  Named volumes persisted across runs</text>
-  <text x="548" y="210" font-family="'Segoe UI',sans-serif" font-size="12" fill="#3fb950">✅  Scale services: --scale app=3</text>
-  <text x="548" y="230" font-family="'Segoe UI',sans-serif" font-size="12" fill="#3fb950">✅  Override with compose.override.yml</text>
-  <text x="430" y="282" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="#6e7681">Compose orchestrates multiple containers as a single application stack</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 380" width="860" height="380">
+  <defs>
+    <symbol id="docker-logo" viewBox="0 0 24 24"><path fill="#2496ED" d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.186.186 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.082.185.184.185m24.758 1.886c-.722-1.189-2.641-1.624-4.508-1.46-.316-2.336-1.943-4.37-4.678-6.16l-.949-.569-.633.912c-.8 1.217-1.204 2.907-1.14 4.53.068 1.564.606 3.128 1.53 4.33-.713.385-2.12.958-3.975.926H.485a.486.486 0 00-.486.484c-.023 1.782.28 3.535.876 5.098C1.535 21.537 2.6 23.022 4.21 24c1.79 1.089 4.712 1.707 8.076 1.707 7.59 0 13.18-3.471 15.823-9.767 1.035.019 3.266.016 4.41-2.153a.488.488 0 00.007-.49l-.586-.323z"/></symbol>
+  </defs>
+  <rect width="860" height="380" fill="#0d1117" rx="12"/>
+  <!-- Header -->
+  <rect x="0" y="0" width="860" height="48" rx="12" fill="#161b22"/>
+  <rect x="0" y="36" width="860" height="12" fill="#161b22"/>
+  <use href="#docker-logo" x="14" y="10" width="28" height="28"/>
+  <text x="52" y="31" font-family="'Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#e6edf3">Theory 04 — Docker Compose</text>
+  <line x1="0" y1="48" x2="860" y2="48" stroke="#1d3354" stroke-width="1"/>
+
+  <!-- docker-compose.yml code panel -->
+  <rect x="24" y="64" width="390" height="286" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <rect x="24" y="64" width="390" height="32" rx="8" fill="#21262d"/>
+  <text x="36" y="85" font-family="'Segoe UI',sans-serif" font-size="12" font-weight="600" fill="#8b949e">📄  docker-compose.yml</text>
+  <text x="36" y="116" font-family="monospace" font-size="11" fill="#d29922">version: '3.9'</text>
+  <text x="36" y="134" font-family="monospace" font-size="11" fill="#58a6ff">services:</text>
+  <text x="36" y="152" font-family="monospace" font-size="11" fill="#e6edf3">  web:</text>
+  <text x="36" y="168" font-family="monospace" font-size="11" fill="#6e7681">    image: nginx:alpine</text>
+  <text x="36" y="184" font-family="monospace" font-size="11" fill="#6e7681">    ports: ["80:80"]</text>
+  <text x="36" y="200" font-family="monospace" font-size="11" fill="#6e7681">    depends_on: [api]</text>
+  <text x="36" y="218" font-family="monospace" font-size="11" fill="#e6edf3">  api:</text>
+  <text x="36" y="234" font-family="monospace" font-size="11" fill="#6e7681">    build: ./api</text>
+  <text x="36" y="250" font-family="monospace" font-size="11" fill="#6e7681">    environment:</text>
+  <text x="36" y="266" font-family="monospace" font-size="11" fill="#6e7681">      - DB_HOST=db</text>
+  <text x="36" y="282" font-family="monospace" font-size="11" fill="#e6edf3">  db:</text>
+  <text x="36" y="298" font-family="monospace" font-size="11" fill="#6e7681">    image: postgres:15</text>
+  <text x="36" y="314" font-family="monospace" font-size="11" fill="#6e7681">    volumes:</text>
+  <text x="36" y="330" font-family="monospace" font-size="11" fill="#6e7681">      - pg_data:/var/lib/pg...</text>
+
+  <!-- Arrow YAML→Services -->
+  <line x1="414" y1="200" x2="450" y2="200" stroke="#2496ED" stroke-width="2" marker-end="url(#arrc)"/>
+  <text x="432" y="192" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="9" fill="#6e7681">up -d</text>
+
+  <!-- Service boxes on right -->
+  <!-- web -->
+  <rect x="452" y="64" width="370" height="72" rx="8" fill="#161b22" stroke="#2496ED" stroke-width="1.5"/>
+  <use href="#docker-logo" x="462" y="72" width="20" height="20"/>
+  <text x="492" y="88" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#2496ED">web  (nginx:alpine)</text>
+  <text x="462" y="108" font-family="monospace" font-size="11" fill="#8b949e">Port 80:80 · depends_on: api</text>
+  <text x="462" y="124" font-family="monospace" font-size="11" fill="#3fb950">● Running</text>
+  <!-- api -->
+  <rect x="452" y="150" width="370" height="72" rx="8" fill="#161b22" stroke="#3fb950" stroke-width="1.5"/>
+  <use href="#docker-logo" x="462" y="158" width="20" height="20"/>
+  <text x="492" y="174" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#3fb950">api  (built from ./api)</text>
+  <text x="462" y="194" font-family="monospace" font-size="11" fill="#8b949e">DB_HOST=db · Internal network</text>
+  <text x="462" y="210" font-family="monospace" font-size="11" fill="#3fb950">● Running</text>
+  <!-- db -->
+  <rect x="452" y="236" width="370" height="72" rx="8" fill="#161b22" stroke="#d29922" stroke-width="1.5"/>
+  <use href="#docker-logo" x="462" y="244" width="20" height="20"/>
+  <text x="492" y="260" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#d29922">db  (postgres:15)</text>
+  <text x="462" y="280" font-family="monospace" font-size="11" fill="#8b949e">Volume: pg_data · Port 5432</text>
+  <text x="462" y="296" font-family="monospace" font-size="11" fill="#3fb950">● Running</text>
+  <!-- shared network label -->
+  <rect x="452" y="322" width="370" height="28" rx="6" fill="#1d3354" fill-opacity="0.6"/>
+  <text x="637" y="341" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="#58a6ff">🌐  Shared Docker network (auto-created)</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrc" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#2496ED"/>
+    </marker>
+  </defs>
+
+  <text x="430" y="368" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="#6e7681">One YAML file → multi-container app. Services auto-discover each other by service name on shared network.</text>
 </svg>

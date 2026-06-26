@@ -1,36 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 340" width="860" height="340">
-  <rect width="860" height="340" fill="#0d1117" rx="12"/>
-  <text x="430" y="36" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="20" font-weight="700" fill="#e6edf3">⚖️  Theory 02 — Containers vs Virtual Machines</text>
-  <line x1="40" y1="50" x2="820" y2="50" stroke="#30363d" stroke-width="1"/>
-  <!-- VM column -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 345" width="860" height="345">
+  <defs>
+    <symbol id="docker-logo" viewBox="0 0 24 24"><path fill="#2496ED" d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.186.186 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.082.185.184.185m24.758 1.886c-.722-1.189-2.641-1.624-4.508-1.46-.316-2.336-1.943-4.37-4.678-6.16l-.949-.569-.633.912c-.8 1.217-1.204 2.907-1.14 4.53.068 1.564.606 3.128 1.53 4.33-.713.385-2.12.958-3.975.926H.485a.486.486 0 00-.486.484c-.023 1.782.28 3.535.876 5.098C1.535 21.537 2.6 23.022 4.21 24c1.79 1.089 4.712 1.707 8.076 1.707 7.59 0 13.18-3.471 15.823-9.767 1.035.019 3.266.016 4.41-2.153a.488.488 0 00.007-.49l-.586-.323z"/></symbol>
+  </defs>
+  <rect width="860" height="345" fill="#0d1117" rx="12"/>
+  <!-- Header -->
+  <rect x="0" y="0" width="860" height="48" rx="12" fill="#161b22"/>
+  <rect x="0" y="36" width="860" height="12" fill="#161b22"/>
+  <use href="#docker-logo" x="14" y="10" width="28" height="28"/>
+  <text x="52" y="31" font-family="'Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#e6edf3">Theory 02 — Containers vs Virtual Machines</text>
+  <line x1="0" y1="48" x2="860" y2="48" stroke="#1d3354" stroke-width="1"/>
+
+  <!-- VM column title -->
   <text x="215" y="78" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="15" font-weight="700" fill="#f85149">Virtual Machine (VM)</text>
-  <!-- VM stack -->
+  <!-- VM stack boxes -->
   <rect x="80" y="90" width="270" height="34" rx="6" fill="#21262d" stroke="#30363d" stroke-width="1"/>
   <text x="215" y="112" text-anchor="middle" font-family="monospace" font-size="12" fill="#e6edf3">App A</text>
   <rect x="80" y="130" width="270" height="34" rx="6" fill="#21262d" stroke="#30363d" stroke-width="1"/>
-  <text x="215" y="152" text-anchor="middle" font-family="monospace" font-size="12" fill="#e6edf3">Guest OS (Ubuntu)</text>
-  <rect x="80" y="170" width="270" height="34" rx="6" fill="#da3633" fill-opacity="0.3" stroke="#f85149" stroke-width="1"/>
+  <text x="215" y="152" text-anchor="middle" font-family="monospace" font-size="12" fill="#8b949e">Guest OS (Ubuntu)</text>
+  <rect x="80" y="170" width="270" height="34" rx="6" fill="#da3633" fill-opacity="0.25" stroke="#f85149" stroke-width="1"/>
   <text x="215" y="192" text-anchor="middle" font-family="monospace" font-size="12" fill="#f85149">Hypervisor (VMware/VBox)</text>
   <rect x="80" y="210" width="270" height="34" rx="6" fill="#21262d" stroke="#30363d" stroke-width="1"/>
-  <text x="215" y="232" text-anchor="middle" font-family="monospace" font-size="12" fill="#8b949e">Host OS</text>
+  <text x="215" y="232" text-anchor="middle" font-family="monospace" font-size="12" fill="#8b949e">Host OS (Linux/Win/Mac)</text>
   <rect x="80" y="250" width="270" height="34" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
   <text x="215" y="272" text-anchor="middle" font-family="monospace" font-size="12" fill="#6e7681">Hardware</text>
-  <text x="215" y="305" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="#f85149">⚠️  GBs · Minutes to start · Full OS</text>
-  <!-- Container column -->
-  <text x="645" y="78" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="15" font-weight="700" fill="#22d3ee">Container</text>
-  <rect x="510" y="90" width="120" height="34" rx="6" fill="#21262d" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="215" y="305" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="#f85149">⚠️  GBs · Minutes to boot · Full Guest OS</text>
+
+  <!-- Container column title -->
+  <!-- Docker logo next to "Container" title -->
+  <use href="#docker-logo" x="584" y="58" width="24" height="24"/>
+  <text x="642" y="78" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="15" font-weight="700" fill="#2496ED">Container (Docker)</text>
+
+  <!-- Container stacks — two containers side by side -->
+  <rect x="510" y="90" width="120" height="34" rx="6" fill="#21262d" stroke="#2496ED" stroke-width="1.5"/>
   <text x="570" y="112" text-anchor="middle" font-family="monospace" font-size="12" fill="#e6edf3">App A</text>
-  <rect x="640" y="90" width="120" height="34" rx="6" fill="#21262d" stroke="#22d3ee" stroke-width="1.5"/>
-  <text x="700" y="112" text-anchor="middle" font-family="monospace" font-size="12" fill="#e6edf3">App B</text>
-  <rect x="510" y="130" width="250" height="34" rx="6" fill="#0ea5e9" fill-opacity="0.25" stroke="#0ea5e9" stroke-width="1.5"/>
-  <text x="635" y="152" text-anchor="middle" font-family="monospace" font-size="12" fill="#22d3ee">Docker Engine</text>
-  <rect x="510" y="170" width="250" height="34" rx="6" fill="#21262d" stroke="#30363d" stroke-width="1"/>
-  <text x="635" y="192" text-anchor="middle" font-family="monospace" font-size="12" fill="#8b949e">Host OS (shared kernel)</text>
-  <rect x="510" y="210" width="250" height="34" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-  <text x="635" y="232" text-anchor="middle" font-family="monospace" font-size="12" fill="#6e7681">Hardware</text>
-  <text x="635" y="305" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="#3fb950">✅  MBs · Seconds to start · Shared OS</text>
+  <rect x="642" y="90" width="120" height="34" rx="6" fill="#21262d" stroke="#2496ED" stroke-width="1.5"/>
+  <text x="702" y="112" text-anchor="middle" font-family="monospace" font-size="12" fill="#e6edf3">App B</text>
+  <!-- Docker Engine row -->
+  <rect x="510" y="130" width="252" height="34" rx="6" fill="#2496ED" fill-opacity="0.2" stroke="#2496ED" stroke-width="1.5"/>
+  <use href="#docker-logo" x="518" y="136" width="22" height="22"/>
+  <text x="655" y="152" text-anchor="middle" font-family="monospace" font-size="12" fill="#2496ED">Docker Engine</text>
+  <rect x="510" y="170" width="252" height="34" rx="6" fill="#21262d" stroke="#30363d" stroke-width="1"/>
+  <text x="636" y="192" text-anchor="middle" font-family="monospace" font-size="12" fill="#8b949e">Host OS (shared kernel)</text>
+  <rect x="510" y="210" width="252" height="34" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="636" y="232" text-anchor="middle" font-family="monospace" font-size="12" fill="#6e7681">Hardware</text>
+  <text x="636" y="305" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="#3fb950">✅  MBs · Milliseconds · No Guest OS</text>
+
   <!-- VS divider -->
-  <text x="430" y="185" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="26" font-weight="900" fill="#d29922">VS</text>
+  <text x="430" y="195" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="28" font-weight="900" fill="#d29922">VS</text>
   <line x1="430" y1="85" x2="430" y2="285" stroke="#30363d" stroke-width="1" stroke-dasharray="4,4"/>
-  <text x="430" y="325" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="#6e7681">Containers share the host OS kernel — no Guest OS needed, making them far lighter and faster</text>
+
+  <text x="430" y="332" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="#6e7681">Containers share the host OS kernel — no Guest OS overhead. Docker uses Linux namespaces and cgroups for isolation.</text>
 </svg>
