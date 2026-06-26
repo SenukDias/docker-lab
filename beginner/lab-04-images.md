@@ -1,5 +1,33 @@
 # 🐳 Lab 04 — Images & Layers
 
+
+---
+
+<div align="center">
+
+[![← Prev](https://img.shields.io/badge/←_Dockerfile-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-03-dockerfile.md)
+[![Beginner_Index](https://img.shields.io/badge/Beginner_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+[![Next →](https://img.shields.io/badge/Volumes_→-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-05-volumes.md)
+
+</div>
+
+---
+
+<div align="center">
+
+**Jump to section:**
+
+[![How_Docker_Images_Work](https://img.shields.io/badge/How_Docker_Images_Work-2496ED?style=flat-square&logo=docker&logoColor=white)](#how-docker-images-work)
+[![Image_Commands](https://img.shields.io/badge/Image_Commands-2496ED?style=flat-square&logo=docker&logoColor=white)](#image-commands)
+[![Image_Naming_Convention](https://img.shields.io/badge/Image_Naming_Convention-2496ED?style=flat-square&logo=docker&logoColor=white)](#image-naming-convention)
+[![Choosing_the_Right_Base_Imag](https://img.shields.io/badge/Choosing_the_Right_Base_Imag-2496ED?style=flat-square&logo=docker&logoColor=white)](#choosing-the-right-base-image)
+[![Build_Cache_Optimization](https://img.shields.io/badge/Build_Cache_Optimization-2496ED?style=flat-square&logo=docker&logoColor=white)](#build-cache-optimization)
+[![Dive_Tool_Inspect_Image_Laye](https://img.shields.io/badge/Dive_Tool_Inspect_Image_Laye-2496ED?style=flat-square&logo=docker&logoColor=white)](#dive-tool-inspect-image-layers)
+[![Lab_Tasks](https://img.shields.io/badge/Lab_Tasks-2496ED?style=flat-square&logo=docker&logoColor=white)](#lab-tasks)
+
+</div>
+
+---
 > **Level:** Beginner | **Time:** ~25 min | **Goal:** Understand image layers, tags, and optimization
 
 ---
@@ -121,3 +149,12 @@ dive flask-app:v1
 4. Tag your image as `yourusername/flask-app:v1` (don't push yet — we'll do that in Lab 12)
 
 > 💡 **Next:** [Lab 05 — Volumes & Persistent Storage →](lab-05-volumes.md)
+---
+
+<div align="center">
+
+[![← Prev](https://img.shields.io/badge/←_Dockerfile-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-03-dockerfile.md)
+[![Beginner_Index](https://img.shields.io/badge/Beginner_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+[![Next →](https://img.shields.io/badge/Volumes_→-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-05-volumes.md)
+
+</div>

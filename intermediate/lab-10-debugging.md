@@ -1,5 +1,31 @@
 # 🐳 Lab 10 — Debugging Containers
 
+
+---
+
+<div align="center">
+
+[![← Prev](https://img.shields.io/badge/←_Environment-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-09-environment.md)
+[![Intermediate_Index](https://img.shields.io/badge/Intermediate_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+[![Next →](https://img.shields.io/badge/Multistage_→-2496ED?style=for-the-badge&logo=docker&logoColor=white)](../pro/lab-11-multistage-builds.md)
+
+</div>
+
+---
+
+<div align="center">
+
+**Jump to section:**
+
+[![Debug_Toolkit](https://img.shields.io/badge/Debug_Toolkit-2496ED?style=flat-square&logo=docker&logoColor=white)](#debug-toolkit)
+[![Common_Issues_%26_Fixes](https://img.shields.io/badge/Common_Issues_%26_Fixes-2496ED?style=flat-square&logo=docker&logoColor=white)](#common-issues-fixes)
+[![Debugging_a_Crashed_Containe](https://img.shields.io/badge/Debugging_a_Crashed_Containe-2496ED?style=flat-square&logo=docker&logoColor=white)](#debugging-a-crashed-container)
+[![Docker_Events](https://img.shields.io/badge/Docker_Events-2496ED?style=flat-square&logo=docker&logoColor=white)](#docker-events)
+[![Lab_Tasks](https://img.shields.io/badge/Lab_Tasks-2496ED?style=flat-square&logo=docker&logoColor=white)](#lab-tasks)
+
+</div>
+
+---
 > **Level:** Intermediate | **Time:** ~30 min | **Goal:** Diagnose and fix container issues
 
 ---
@@ -123,3 +149,12 @@ docker events --filter event=die
 3. Run `docker stats` while making 100 requests to your Flask app — observe CPU/memory behavior
 
 > 💡 **Next:** [Pro Track →](../pro/README.md)
+---
+
+<div align="center">
+
+[![← Prev](https://img.shields.io/badge/←_Environment-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-09-environment.md)
+[![Intermediate_Index](https://img.shields.io/badge/Intermediate_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+[![Next →](https://img.shields.io/badge/Multistage_→-2496ED?style=for-the-badge&logo=docker&logoColor=white)](../pro/lab-11-multistage-builds.md)
+
+</div>

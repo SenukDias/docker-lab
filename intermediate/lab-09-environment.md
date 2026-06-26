@@ -1,5 +1,32 @@
 # 🐳 Lab 09 — Environment Variables & Secrets
 
+
+---
+
+<div align="center">
+
+[![← Prev](https://img.shields.io/badge/←_Multi-Container-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-08-multi-container.md)
+[![Intermediate_Index](https://img.shields.io/badge/Intermediate_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+[![Next →](https://img.shields.io/badge/Debugging_→-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-10-debugging.md)
+
+</div>
+
+---
+
+<div align="center">
+
+**Jump to section:**
+
+[![Environment_Variables_in_Doc](https://img.shields.io/badge/Environment_Variables_in_Doc-2496ED?style=flat-square&logo=docker&logoColor=white)](#environment-variables-in-docker)
+[![.env_File_Pattern](https://img.shields.io/badge/.env_File_Pattern-2496ED?style=flat-square&logo=docker&logoColor=white)](#env-file-pattern)
+[![Docker_Secrets_Swarm__Best_P](https://img.shields.io/badge/Docker_Secrets_Swarm__Best_P-2496ED?style=flat-square&logo=docker&logoColor=white)](#docker-secrets-swarm-best-practice)
+[![Reading_Secrets_in_Code](https://img.shields.io/badge/Reading_Secrets_in_Code-2496ED?style=flat-square&logo=docker&logoColor=white)](#reading-secrets-in-code)
+[![Override_for_Dev_vs_Prod](https://img.shields.io/badge/Override_for_Dev_vs_Prod-2496ED?style=flat-square&logo=docker&logoColor=white)](#override-for-dev-vs-prod)
+[![Lab_Tasks](https://img.shields.io/badge/Lab_Tasks-2496ED?style=flat-square&logo=docker&logoColor=white)](#lab-tasks)
+
+</div>
+
+---
 > **Level:** Intermediate | **Time:** ~25 min | **Goal:** Manage config and secrets safely
 
 ---
@@ -124,3 +151,12 @@ docker compose -f docker-compose.yml up
 3. Use `docker compose.override.yml` for dev (bind mount) vs prod (no bind mount)
 
 > 💡 **Next:** [Lab 10 — Debugging Containers →](lab-10-debugging.md)
+---
+
+<div align="center">
+
+[![← Prev](https://img.shields.io/badge/←_Multi-Container-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-08-multi-container.md)
+[![Intermediate_Index](https://img.shields.io/badge/Intermediate_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+[![Next →](https://img.shields.io/badge/Debugging_→-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-10-debugging.md)
+
+</div>

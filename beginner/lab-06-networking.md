@@ -1,5 +1,34 @@
 # 🐳 Lab 06 — Docker Networking
 
+
+---
+
+<div align="center">
+
+[![← Prev](https://img.shields.io/badge/←_Volumes-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-05-volumes.md)
+[![Beginner_Index](https://img.shields.io/badge/Beginner_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+[![Next →](https://img.shields.io/badge/Docker_Compose_→-2496ED?style=for-the-badge&logo=docker&logoColor=white)](../intermediate/lab-07-docker-compose.md)
+
+</div>
+
+---
+
+<div align="center">
+
+**Jump to section:**
+
+[![Docker_Network_Types](https://img.shields.io/badge/Docker_Network_Types-2496ED?style=flat-square&logo=docker&logoColor=white)](#docker-network-types)
+[![Bridge_Network_Default](https://img.shields.io/badge/Bridge_Network_Default-2496ED?style=flat-square&logo=docker&logoColor=white)](#bridge-network-default)
+[![Custom_Bridge_Network_DNS_Re](https://img.shields.io/badge/Custom_Bridge_Network_DNS_Re-2496ED?style=flat-square&logo=docker&logoColor=white)](#custom-bridge-network-dns-resolution)
+[![Network_Commands](https://img.shields.io/badge/Network_Commands-2496ED?style=flat-square&logo=docker&logoColor=white)](#network-commands)
+[![Port_Mapping_Deep_Dive](https://img.shields.io/badge/Port_Mapping_Deep_Dive-2496ED?style=flat-square&logo=docker&logoColor=white)](#port-mapping-deep-dive)
+[![Practical_App__Database_Netw](https://img.shields.io/badge/Practical_App__Database_Netw-2496ED?style=flat-square&logo=docker&logoColor=white)](#practical-app-database-network)
+[![Host_Network_Mode_Linux_only](https://img.shields.io/badge/Host_Network_Mode_Linux_only-2496ED?style=flat-square&logo=docker&logoColor=white)](#host-network-mode-linux-only)
+[![Lab_Tasks](https://img.shields.io/badge/Lab_Tasks-2496ED?style=flat-square&logo=docker&logoColor=white)](#lab-tasks)
+
+</div>
+
+---
 > **Level:** Beginner | **Time:** ~25 min | **Goal:** Connect containers via networks
 
 ---
@@ -141,3 +170,12 @@ docker run --network host nginx
 3. Demonstrate the difference: run two containers on the **default** bridge and try name-based DNS (it should fail)
 
 > 💡 **Next:** [Intermediate Track →](../intermediate/README.md)
+---
+
+<div align="center">
+
+[![← Prev](https://img.shields.io/badge/←_Volumes-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-05-volumes.md)
+[![Beginner_Index](https://img.shields.io/badge/Beginner_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+[![Next →](https://img.shields.io/badge/Docker_Compose_→-2496ED?style=for-the-badge&logo=docker&logoColor=white)](../intermediate/lab-07-docker-compose.md)
+
+</div>

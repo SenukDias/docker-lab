@@ -1,5 +1,32 @@
 # 🐳 Lab 07 — Docker Compose
 
+
+---
+
+<div align="center">
+
+[![← Prev](https://img.shields.io/badge/←_Networking-2496ED?style=for-the-badge&logo=docker&logoColor=white)](../beginner/lab-06-networking.md)
+[![Intermediate_Index](https://img.shields.io/badge/Intermediate_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+[![Next →](https://img.shields.io/badge/Multi-Container_→-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-08-multi-container.md)
+
+</div>
+
+---
+
+<div align="center">
+
+**Jump to section:**
+
+[![Why_Compose](https://img.shields.io/badge/Why_Compose-2496ED?style=flat-square&logo=docker&logoColor=white)](#why-compose)
+[![docker-compose.yml_Structure](https://img.shields.io/badge/docker-compose.yml_Structure-2496ED?style=flat-square&logo=docker&logoColor=white)](#docker-composeyml-structure)
+[![Compose_Commands](https://img.shields.io/badge/Compose_Commands-2496ED?style=flat-square&logo=docker&logoColor=white)](#compose-commands)
+[![Environment_Variables_%26_.e](https://img.shields.io/badge/Environment_Variables_%26_.e-2496ED?style=flat-square&logo=docker&logoColor=white)](#environment-variables-env-file)
+[![Health_Checks_in_Compose](https://img.shields.io/badge/Health_Checks_in_Compose-2496ED?style=flat-square&logo=docker&logoColor=white)](#health-checks-in-compose)
+[![Lab_Tasks](https://img.shields.io/badge/Lab_Tasks-2496ED?style=flat-square&logo=docker&logoColor=white)](#lab-tasks)
+
+</div>
+
+---
 > **Level:** Intermediate | **Time:** ~35 min | **Goal:** Orchestrate multi-container apps
 
 ---
@@ -160,3 +187,12 @@ services:
 5. Run `docker compose down -v` then `up` again — confirm data is gone (volumes removed)
 
 > 💡 **Next:** [Lab 08 — Multi-Container App Stack →](lab-08-multi-container.md)
+---
+
+<div align="center">
+
+[![← Prev](https://img.shields.io/badge/←_Networking-2496ED?style=for-the-badge&logo=docker&logoColor=white)](../beginner/lab-06-networking.md)
+[![Intermediate_Index](https://img.shields.io/badge/Intermediate_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+[![Next →](https://img.shields.io/badge/Multi-Container_→-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-08-multi-container.md)
+
+</div>

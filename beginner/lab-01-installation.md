@@ -1,5 +1,32 @@
 # 🐳 Lab 01 — Docker Installation
 
+
+---
+
+<div align="center">
+
+[![Beginner_Index](https://img.shields.io/badge/Beginner_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+[![Next →](https://img.shields.io/badge/First_Container_→-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-02-first-container.md)
+
+</div>
+
+---
+
+<div align="center">
+
+**Jump to section:**
+
+[![Prerequisites](https://img.shields.io/badge/Prerequisites-2496ED?style=flat-square&logo=docker&logoColor=white)](#prerequisites)
+[![Windows_Docker_Desktop](https://img.shields.io/badge/Windows_Docker_Desktop-2496ED?style=flat-square&logo=docker&logoColor=white)](#windows-docker-desktop)
+[![macOS_Docker_Desktop](https://img.shields.io/badge/macOS_Docker_Desktop-2496ED?style=flat-square&logo=docker&logoColor=white)](#macos-docker-desktop)
+[![Linux_Docker_Engine](https://img.shields.io/badge/Linux_Docker_Engine-2496ED?style=flat-square&logo=docker&logoColor=white)](#linux-docker-engine)
+[![Verify_Installation](https://img.shields.io/badge/Verify_Installation-2496ED?style=flat-square&logo=docker&logoColor=white)](#verify-installation)
+[![Troubleshooting](https://img.shields.io/badge/Troubleshooting-2496ED?style=flat-square&logo=docker&logoColor=white)](#troubleshooting)
+[![Lab_Task](https://img.shields.io/badge/Lab_Task-2496ED?style=flat-square&logo=docker&logoColor=white)](#lab-task)
+
+</div>
+
+---
 > **Level:** Beginner | **Time:** ~20 min | **Goal:** Install Docker and verify it works
 
 ---
@@ -116,3 +143,11 @@ This message shows that your installation appears to be working correctly.
 4. Exit with `exit`, then run `docker ps -a` to see stopped containers
 
 > 💡 **Next:** [Lab 02 — Your First Container →](lab-02-first-container.md)
+---
+
+<div align="center">
+
+[![Beginner_Index](https://img.shields.io/badge/Beginner_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+[![Next →](https://img.shields.io/badge/First_Container_→-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-02-first-container.md)
+
+</div>

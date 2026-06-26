@@ -1,5 +1,34 @@
 # 🐳 Lab 02 — Your First Container
 
+
+---
+
+<div align="center">
+
+[![← Prev](https://img.shields.io/badge/←_Installation-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-01-installation.md)
+[![Beginner_Index](https://img.shields.io/badge/Beginner_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+[![Next →](https://img.shields.io/badge/Dockerfile_→-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-03-dockerfile.md)
+
+</div>
+
+---
+
+<div align="center">
+
+**Jump to section:**
+
+[![Core_Container_Commands](https://img.shields.io/badge/Core_Container_Commands-2496ED?style=flat-square&logo=docker&logoColor=white)](#core-container-commands)
+[![Container_Lifecycle](https://img.shields.io/badge/Container_Lifecycle-2496ED?style=flat-square&logo=docker&logoColor=white)](#container-lifecycle)
+[![Port_Mapping](https://img.shields.io/badge/Port_Mapping-2496ED?style=flat-square&logo=docker&logoColor=white)](#port-mapping)
+[![Naming_Containers](https://img.shields.io/badge/Naming_Containers-2496ED?style=flat-square&logo=docker&logoColor=white)](#naming-containers)
+[![Inspect_a_Container](https://img.shields.io/badge/Inspect_a_Container-2496ED?style=flat-square&logo=docker&logoColor=white)](#inspect-a-container)
+[![Container_Stats_%26_Monitori](https://img.shields.io/badge/Container_Stats_%26_Monitori-2496ED?style=flat-square&logo=docker&logoColor=white)](#container-stats-monitoring)
+[![Cleanup_Commands](https://img.shields.io/badge/Cleanup_Commands-2496ED?style=flat-square&logo=docker&logoColor=white)](#cleanup-commands)
+[![Lab_Tasks](https://img.shields.io/badge/Lab_Tasks-2496ED?style=flat-square&logo=docker&logoColor=white)](#lab-tasks)
+
+</div>
+
+---
 > **Level:** Beginner | **Time:** ~25 min | **Goal:** Run, manage, and understand containers
 
 ---
@@ -174,5 +203,14 @@ docker system df
 [![← Lab 01](https://img.shields.io/badge/←_Lab_01-Installation-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-01-installation.md)
 [![Beginner Index](https://img.shields.io/badge/Beginner_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
 [![Lab 03 →](https://img.shields.io/badge/Lab_03_→-Dockerfile-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-03-dockerfile.md)
+
+</div>
+---
+
+<div align="center">
+
+[![← Prev](https://img.shields.io/badge/←_Installation-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-01-installation.md)
+[![Beginner_Index](https://img.shields.io/badge/Beginner_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+[![Next →](https://img.shields.io/badge/Dockerfile_→-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-03-dockerfile.md)
 
 </div>

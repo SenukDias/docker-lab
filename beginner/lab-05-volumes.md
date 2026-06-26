@@ -1,5 +1,33 @@
 # 🐳 Lab 05 — Volumes & Persistent Storage
 
+
+---
+
+<div align="center">
+
+[![← Prev](https://img.shields.io/badge/←_Images-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-04-images.md)
+[![Beginner_Index](https://img.shields.io/badge/Beginner_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+[![Next →](https://img.shields.io/badge/Networking_→-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-06-networking.md)
+
+</div>
+
+---
+
+<div align="center">
+
+**Jump to section:**
+
+[![The_Problem_Containers_Are_E](https://img.shields.io/badge/The_Problem_Containers_Are_E-2496ED?style=flat-square&logo=docker&logoColor=white)](#the-problem-containers-are-ephemeral)
+[![Three_Types_of_Mounts](https://img.shields.io/badge/Three_Types_of_Mounts-2496ED?style=flat-square&logo=docker&logoColor=white)](#three-types-of-mounts)
+[![Named_Volumes](https://img.shields.io/badge/Named_Volumes-2496ED?style=flat-square&logo=docker&logoColor=white)](#named-volumes)
+[![Bind_Mounts_Live_Code_Reload](https://img.shields.io/badge/Bind_Mounts_Live_Code_Reload-2496ED?style=flat-square&logo=docker&logoColor=white)](#bind-mounts-live-code-reload)
+[![Database_with_Persistent_Vol](https://img.shields.io/badge/Database_with_Persistent_Vol-2496ED?style=flat-square&logo=docker&logoColor=white)](#database-with-persistent-volume)
+[![Volume_in_Dockerfile](https://img.shields.io/badge/Volume_in_Dockerfile-2496ED?style=flat-square&logo=docker&logoColor=white)](#volume-in-dockerfile)
+[![Lab_Tasks](https://img.shields.io/badge/Lab_Tasks-2496ED?style=flat-square&logo=docker&logoColor=white)](#lab-tasks)
+
+</div>
+
+---
 > **Level:** Beginner | **Time:** ~25 min | **Goal:** Persist data beyond container lifecycle
 
 ---
@@ -130,3 +158,12 @@ VOLUME /app/data    # Docker auto-creates an anonymous volume here
 3. Run `docker volume ls` and `docker volume inspect` — understand where the data is stored on host
 
 > 💡 **Next:** [Lab 06 — Docker Networking →](lab-06-networking.md)
+---
+
+<div align="center">
+
+[![← Prev](https://img.shields.io/badge/←_Images-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-04-images.md)
+[![Beginner_Index](https://img.shields.io/badge/Beginner_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+[![Next →](https://img.shields.io/badge/Networking_→-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-06-networking.md)
+
+</div>

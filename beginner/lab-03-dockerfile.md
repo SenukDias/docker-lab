@@ -1,5 +1,33 @@
 # 🐳 Lab 03 — Writing a Dockerfile
 
+
+---
+
+<div align="center">
+
+[![← Prev](https://img.shields.io/badge/←_First_Container-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-02-first-container.md)
+[![Beginner_Index](https://img.shields.io/badge/Beginner_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+[![Next →](https://img.shields.io/badge/Images_→-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-04-images.md)
+
+</div>
+
+---
+
+<div align="center">
+
+**Jump to section:**
+
+[![What_is_a_Dockerfile](https://img.shields.io/badge/What_is_a_Dockerfile-2496ED?style=flat-square&logo=docker&logoColor=white)](#what-is-a-dockerfile)
+[![Dockerfile_Instructions_Refe](https://img.shields.io/badge/Dockerfile_Instructions_Refe-2496ED?style=flat-square&logo=docker&logoColor=white)](#dockerfile-instructions-reference)
+[![Your_First_Dockerfile_Python](https://img.shields.io/badge/Your_First_Dockerfile_Python-2496ED?style=flat-square&logo=docker&logoColor=white)](#your-first-dockerfile-python-flask-app)
+[![CMD_vs_ENTRYPOINT](https://img.shields.io/badge/CMD_vs_ENTRYPOINT-2496ED?style=flat-square&logo=docker&logoColor=white)](#cmd-vs-entrypoint)
+[![.dockerignore_File](https://img.shields.io/badge/.dockerignore_File-2496ED?style=flat-square&logo=docker&logoColor=white)](#dockerignore-file)
+[![Layer_Caching_Best_Practices](https://img.shields.io/badge/Layer_Caching_Best_Practices-2496ED?style=flat-square&logo=docker&logoColor=white)](#layer-caching-best-practices)
+[![Lab_Tasks](https://img.shields.io/badge/Lab_Tasks-2496ED?style=flat-square&logo=docker&logoColor=white)](#lab-tasks)
+
+</div>
+
+---
 > **Level:** Beginner | **Time:** ~30 min | **Goal:** Build your own custom Docker image
 
 ---
@@ -156,3 +184,12 @@ RUN pip install -r requirements.txt
 4. Try `docker run flask-app:v1 python -c "print('hello')"` — observe CMD override
 
 > 💡 **Next:** [Lab 04 — Images & Layers →](lab-04-images.md)
+---
+
+<div align="center">
+
+[![← Prev](https://img.shields.io/badge/←_First_Container-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-02-first-container.md)
+[![Beginner_Index](https://img.shields.io/badge/Beginner_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+[![Next →](https://img.shields.io/badge/Images_→-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-04-images.md)
+
+</div>

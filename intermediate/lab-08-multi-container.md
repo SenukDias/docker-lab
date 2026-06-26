@@ -1,5 +1,34 @@
 # 🐳 Lab 08 — Multi-Container App Stack
 
+
+---
+
+<div align="center">
+
+[![← Prev](https://img.shields.io/badge/←_Docker_Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-07-docker-compose.md)
+[![Intermediate_Index](https://img.shields.io/badge/Intermediate_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+[![Next →](https://img.shields.io/badge/Environment_→-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-09-environment.md)
+
+</div>
+
+---
+
+<div align="center">
+
+**Jump to section:**
+
+[![Architecture](https://img.shields.io/badge/Architecture-2496ED?style=flat-square&logo=docker&logoColor=white)](#architecture)
+[![Project_Structure](https://img.shields.io/badge/Project_Structure-2496ED?style=flat-square&logo=docker&logoColor=white)](#project-structure)
+[![Flask_Application](https://img.shields.io/badge/Flask_Application-2496ED?style=flat-square&logo=docker&logoColor=white)](#flask-application)
+[![Dockerfile](https://img.shields.io/badge/Dockerfile-2496ED?style=flat-square&logo=docker&logoColor=white)](#dockerfile)
+[![Nginx_Configuration](https://img.shields.io/badge/Nginx_Configuration-2496ED?style=flat-square&logo=docker&logoColor=white)](#nginx-configuration)
+[![docker-compose.yml](https://img.shields.io/badge/docker-compose.yml-2496ED?style=flat-square&logo=docker&logoColor=white)](#docker-composeyml)
+[![Deploy_the_Stack](https://img.shields.io/badge/Deploy_the_Stack-2496ED?style=flat-square&logo=docker&logoColor=white)](#deploy-the-stack)
+[![Lab_Tasks](https://img.shields.io/badge/Lab_Tasks-2496ED?style=flat-square&logo=docker&logoColor=white)](#lab-tasks)
+
+</div>
+
+---
 > **Level:** Intermediate | **Time:** ~45 min | **Goal:** Build a real Flask + Redis + Nginx stack
 
 ---
@@ -189,3 +218,12 @@ curl http://localhost/health
 4. Add a new endpoint `/metrics` that returns container hostname — test it
 
 > 💡 **Next:** [Lab 09 — Environment & Secrets →](lab-09-environment.md)
+---
+
+<div align="center">
+
+[![← Prev](https://img.shields.io/badge/←_Docker_Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-07-docker-compose.md)
+[![Intermediate_Index](https://img.shields.io/badge/Intermediate_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+[![Next →](https://img.shields.io/badge/Environment_→-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-09-environment.md)
+
+</div>

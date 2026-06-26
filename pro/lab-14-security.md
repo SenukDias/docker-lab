@@ -1,5 +1,35 @@
 # 🔴 Lab 14 — Docker Security
 
+
+---
+
+<div align="center">
+
+[![← Prev](https://img.shields.io/badge/←_CI%2FCD-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-13-cicd-docker.md)
+[![Pro_Index](https://img.shields.io/badge/Pro_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+
+</div>
+
+---
+
+<div align="center">
+
+**Jump to section:**
+
+[![Security_Checklist](https://img.shields.io/badge/Security_Checklist-2496ED?style=flat-square&logo=docker&logoColor=white)](#security-checklist)
+[![1._Non-Root_User](https://img.shields.io/badge/1._Non-Root_User-2496ED?style=flat-square&logo=docker&logoColor=white)](#1-non-root-user)
+[![2._Read-Only_Filesystem](https://img.shields.io/badge/2._Read-Only_Filesystem-2496ED?style=flat-square&logo=docker&logoColor=white)](#2-read-only-filesystem)
+[![3._Resource_Limits](https://img.shields.io/badge/3._Resource_Limits-2496ED?style=flat-square&logo=docker&logoColor=white)](#3-resource-limits)
+[![4._Drop_Linux_Capabilities](https://img.shields.io/badge/4._Drop_Linux_Capabilities-2496ED?style=flat-square&logo=docker&logoColor=white)](#4-drop-linux-capabilities)
+[![5._Secrets_Never_in_ENV_or_L](https://img.shields.io/badge/5._Secrets_Never_in_ENV_or_L-2496ED?style=flat-square&logo=docker&logoColor=white)](#5-secrets-never-in-env-or-layers)
+[![6._Image_Scanning_in_CI](https://img.shields.io/badge/6._Image_Scanning_in_CI-2496ED?style=flat-square&logo=docker&logoColor=white)](#6-image-scanning-in-ci)
+[![7._Content_Trust_Sign_Images](https://img.shields.io/badge/7._Content_Trust_Sign_Images-2496ED?style=flat-square&logo=docker&logoColor=white)](#7-content-trust-sign-images)
+[![Security_Benchmark](https://img.shields.io/badge/Security_Benchmark-2496ED?style=flat-square&logo=docker&logoColor=white)](#security-benchmark)
+[![Lab_Tasks](https://img.shields.io/badge/Lab_Tasks-2496ED?style=flat-square&logo=docker&logoColor=white)](#lab-tasks)
+
+</div>
+
+---
 > **Level:** Pro | **Time:** ~40 min | **Goal:** Harden containers for production
 
 ---
@@ -192,3 +222,11 @@ docker run -it --net host --pid host --userns host --cap-add audit_control \
 4. Run `trivy image myapp:v1` — document findings and upgrade base image to fix
 
 > 🎓 **Congratulations! You've completed the Docker Lab!**
+---
+
+<div align="center">
+
+[![← Prev](https://img.shields.io/badge/←_CI%2FCD-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-13-cicd-docker.md)
+[![Pro_Index](https://img.shields.io/badge/Pro_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+
+</div>

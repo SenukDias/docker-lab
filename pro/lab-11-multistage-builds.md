@@ -1,5 +1,32 @@
 # 🔴 Lab 11 — Multi-Stage Builds
 
+
+---
+
+<div align="center">
+
+[![← Prev](https://img.shields.io/badge/←_Debugging-2496ED?style=for-the-badge&logo=docker&logoColor=white)](../intermediate/lab-10-debugging.md)
+[![Pro_Index](https://img.shields.io/badge/Pro_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+[![Next →](https://img.shields.io/badge/Docker_Hub_→-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-12-docker-hub.md)
+
+</div>
+
+---
+
+<div align="center">
+
+**Jump to section:**
+
+[![The_Problem_with_Single-Stag](https://img.shields.io/badge/The_Problem_with_Single-Stag-2496ED?style=flat-square&logo=docker&logoColor=white)](#the-problem-with-single-stage-builds)
+[![Multi-Stage_Build_Pattern](https://img.shields.io/badge/Multi-Stage_Build_Pattern-2496ED?style=flat-square&logo=docker&logoColor=white)](#multi-stage-build-pattern)
+[![Node.js_Multi-Stage](https://img.shields.io/badge/Node.js_Multi-Stage-2496ED?style=flat-square&logo=docker&logoColor=white)](#nodejs-multi-stage)
+[![Go_True_Static_Binary](https://img.shields.io/badge/Go_True_Static_Binary-2496ED?style=flat-square&logo=docker&logoColor=white)](#go-true-static-binary)
+[![Build_Secrets_BuildKit](https://img.shields.io/badge/Build_Secrets_BuildKit-2496ED?style=flat-square&logo=docker&logoColor=white)](#build-secrets-buildkit)
+[![Lab_Tasks](https://img.shields.io/badge/Lab_Tasks-2496ED?style=flat-square&logo=docker&logoColor=white)](#lab-tasks)
+
+</div>
+
+---
 > **Level:** Pro | **Time:** ~35 min | **Goal:** Create slim, secure production images
 
 ---
@@ -130,3 +157,12 @@ docker build --secret id=npmrc,src=.npmrc -t myapp .
 3. Add a non-root `USER` to your production image — verify with `docker exec whoami`
 
 > 💡 **Next:** [Lab 12 — Docker Hub →](lab-12-docker-hub.md)
+---
+
+<div align="center">
+
+[![← Prev](https://img.shields.io/badge/←_Debugging-2496ED?style=for-the-badge&logo=docker&logoColor=white)](../intermediate/lab-10-debugging.md)
+[![Pro_Index](https://img.shields.io/badge/Pro_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+[![Next →](https://img.shields.io/badge/Docker_Hub_→-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-12-docker-hub.md)
+
+</div>

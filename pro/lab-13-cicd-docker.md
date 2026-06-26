@@ -1,5 +1,30 @@
 # 🔴 Lab 13 — CI/CD with Docker & GitHub Actions
 
+
+---
+
+<div align="center">
+
+[![← Prev](https://img.shields.io/badge/←_Docker_Hub-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-12-docker-hub.md)
+[![Pro_Index](https://img.shields.io/badge/Pro_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+[![Next →](https://img.shields.io/badge/Security_→-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-14-security.md)
+
+</div>
+
+---
+
+<div align="center">
+
+**Jump to section:**
+
+[![Complete_CICD_Pipeline](https://img.shields.io/badge/Complete_CICD_Pipeline-2496ED?style=flat-square&logo=docker&logoColor=white)](#complete-cicd-pipeline)
+[![Docker_Compose_in_CI_Integra](https://img.shields.io/badge/Docker_Compose_in_CI_Integra-2496ED?style=flat-square&logo=docker&logoColor=white)](#docker-compose-in-ci-integration-tests)
+[![Cache_Optimization](https://img.shields.io/badge/Cache_Optimization-2496ED?style=flat-square&logo=docker&logoColor=white)](#cache-optimization)
+[![Lab_Tasks](https://img.shields.io/badge/Lab_Tasks-2496ED?style=flat-square&logo=docker&logoColor=white)](#lab-tasks)
+
+</div>
+
+---
 > **Level:** Pro | **Time:** ~45 min | **Goal:** Automate build, test, scan, and push in CI
 
 ---
@@ -150,3 +175,12 @@ Pipeline time: **5 min → 90 sec** after cache warms up.
 4. Measure cache impact: time run 1 (cold) vs run 2 (warm cache)
 
 > 💡 **Next:** [Lab 14 — Docker Security →](lab-14-security.md)
+---
+
+<div align="center">
+
+[![← Prev](https://img.shields.io/badge/←_Docker_Hub-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-12-docker-hub.md)
+[![Pro_Index](https://img.shields.io/badge/Pro_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+[![Next →](https://img.shields.io/badge/Security_→-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-14-security.md)
+
+</div>

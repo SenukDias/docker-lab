@@ -1,5 +1,33 @@
 # 🔴 Lab 12 — Docker Hub & Container Registries
 
+
+---
+
+<div align="center">
+
+[![← Prev](https://img.shields.io/badge/←_Multistage-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-11-multistage-builds.md)
+[![Pro_Index](https://img.shields.io/badge/Pro_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+[![Next →](https://img.shields.io/badge/CI%2FCD_→-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-13-cicd-docker.md)
+
+</div>
+
+---
+
+<div align="center">
+
+**Jump to section:**
+
+[![Registries_Overview](https://img.shields.io/badge/Registries_Overview-2496ED?style=flat-square&logo=docker&logoColor=white)](#registries-overview)
+[![Docker_Hub_Push_%26_Pull](https://img.shields.io/badge/Docker_Hub_Push_%26_Pull-2496ED?style=flat-square&logo=docker&logoColor=white)](#docker-hub-push-pull)
+[![GitHub_Container_Registry_GH](https://img.shields.io/badge/GitHub_Container_Registry_GH-2496ED?style=flat-square&logo=docker&logoColor=white)](#github-container-registry-ghcr)
+[![Semantic_Versioning_with_Tag](https://img.shields.io/badge/Semantic_Versioning_with_Tag-2496ED?style=flat-square&logo=docker&logoColor=white)](#semantic-versioning-with-tags)
+[![Automated_Multi-Arch_Builds](https://img.shields.io/badge/Automated_Multi-Arch_Builds-2496ED?style=flat-square&logo=docker&logoColor=white)](#automated-multi-arch-builds)
+[![Scanning_Images_for_Vulnerab](https://img.shields.io/badge/Scanning_Images_for_Vulnerab-2496ED?style=flat-square&logo=docker&logoColor=white)](#scanning-images-for-vulnerabilities)
+[![Lab_Tasks](https://img.shields.io/badge/Lab_Tasks-2496ED?style=flat-square&logo=docker&logoColor=white)](#lab-tasks)
+
+</div>
+
+---
 > **Level:** Pro | **Time:** ~30 min | **Goal:** Push, pull, and manage images in registries
 
 ---
@@ -116,3 +144,12 @@ snyk container test flask-app:v1
 4. Run `docker scout cves` or `trivy image` — identify any HIGH/CRITICAL CVEs
 
 > 💡 **Next:** [Lab 13 — CI/CD with Docker →](lab-13-cicd-docker.md)
+---
+
+<div align="center">
+
+[![← Prev](https://img.shields.io/badge/←_Multistage-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-11-multistage-builds.md)
+[![Pro_Index](https://img.shields.io/badge/Pro_Index-0ea5e9?style=for-the-badge&logo=docker&logoColor=white)](README.md)
+[![Next →](https://img.shields.io/badge/CI%2FCD_→-2496ED?style=for-the-badge&logo=docker&logoColor=white)](lab-13-cicd-docker.md)
+
+</div>
